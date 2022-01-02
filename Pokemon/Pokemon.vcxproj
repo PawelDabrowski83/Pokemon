@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Creature.cpp" />
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="EnumElement.cpp" />
     <ClCompile Include="Pokemon.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Creature.h" />
     <ClInclude Include="Elements.h" />
     <ClInclude Include="EnumElement.h" />
     <ClInclude Include="StatBlock.h" />
