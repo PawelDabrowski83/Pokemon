@@ -17,4 +17,6 @@ public:
 	
 	string getName() const;
 	int attackOn(const Elements&) const;
+
+	bool operator ==(const Elements&) const;
 };

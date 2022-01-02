@@ -25,3 +25,8 @@ int Elements::attackOn(const Elements& target) const
 	}
 	return 0;
 }
+
+bool Elements::operator== (const Elements& target) const
+{
+	return this->getName() == target.getName();
+}
