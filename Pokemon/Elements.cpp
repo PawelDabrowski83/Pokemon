@@ -1,4 +1,5 @@
 #include "Elements.h"
+#include "Utils.h"
 
 Elements::Elements(string name) {
 	this->name = name;
@@ -16,5 +17,11 @@ string Elements::getName() const
 
 int Elements::attackOn(Elements target) const
 {
+	if (containsInVector(beats, target)) {
+		return 1;
+	}
+	if (containsInVector(beaten, target)) {
+		return -1;
+	}
 	return 0;
 }
