@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Elements.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="StatBlock.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Elements.h" />
     <ClInclude Include="StatBlock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
