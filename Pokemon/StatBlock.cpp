@@ -19,4 +19,22 @@ void StatBlock::decrease(int value)
 	}
 }
 
+void StatBlock::increase(int value)
+{
+	if (this->value + value > MAX_VALUE) {
+		this->value = MAX_VALUE;
+	}
+	else {
+		this->value = this->value + value;
+	}
+}
 
+void StatBlock::increment()
+{
+	increase(1);
+}
+
+void StatBlock::decrement()
+{
+	decrease(1);
+}
