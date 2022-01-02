@@ -5,9 +5,10 @@ Elements::Elements(const string& name) {
 	this->name = name;
 }
 
-void Elements::initialize(const vector<Elements>& beats, const vector<Elements>& beaten) {
+Elements* Elements::initialize(const vector<Elements>& beats, const vector<Elements>& beaten) {
 	this->beats = beats;
 	this->beaten = beaten;
+	return this;
 }
 
 string Elements::getName() const

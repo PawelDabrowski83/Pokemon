@@ -13,7 +13,7 @@ public:
 	string name;
 	
 	Elements(const string&);
-	void initialize(const vector<Elements>&, const vector<Elements>&);
+	Elements* initialize(const vector<Elements>&, const vector<Elements>&);
 	
 	string getName() const;
 	int attackOn(const Elements&) const;
