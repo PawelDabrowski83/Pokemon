@@ -12,7 +12,7 @@ protected:
 public:
 	string name;
 	
-	Elements(string);
+	Elements(const string&);
 	void initialize(const vector<Elements>&, const vector<Elements>&);
 	
 	string getName() const;

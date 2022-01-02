@@ -17,10 +17,12 @@ int main()
     /*
         INIT
     */
+
     const vector<Elements> universe { 
-        new Elements("WATER"),      new Elements("FIRE"),       new Elements("EARTH"),
-        new Elements("AIR"),        new Elements("ICE"),        new Elements("STEEL")
+        *new Elements("WATER"),      *new Elements("FIRE"),       *new Elements("EARTH"),
+        *new Elements("AIR"),        *new Elements("ICE"),        *new Elements("STEEL")
     };
+
 
 
 

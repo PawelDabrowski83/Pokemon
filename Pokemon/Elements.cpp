@@ -1,7 +1,7 @@
 #include "Elements.h"
 #include "Utils.h"
 
-Elements::Elements(string name) {
+Elements::Elements(const string& name) {
 	this->name = name;
 }
 
