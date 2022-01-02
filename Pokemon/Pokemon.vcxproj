@@ -142,10 +142,12 @@
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="StatBlock.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Elements.h" />
     <ClInclude Include="StatBlock.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
