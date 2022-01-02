@@ -46,7 +46,10 @@ int main()
     string message = "";
     while (message != QUIT_GAME) {
         cout << MENU_INPUT << endl;
+        cout << ELEM_STEEL->attackOn(WATER) << endl;
+        
         cin >> message;
+
 
     }
     
