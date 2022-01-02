@@ -1,11 +1,11 @@
 #include "Elements.h"
 #include "Utils.h"
 
-Elements::Elements(const string& name) {
+Elements::Elements(const EnumElement& name) {
 	this->name = name;
 }
 
-Elements* Elements::initialize(const vector<Elements>& beats, const vector<Elements>& beaten) {
+Elements* Elements::initialize(const vector<EnumElement>& beats, const vector<EnumElement>& beaten) {
 	this->beats = beats;
 	this->beaten = beaten;
 	return this;
@@ -16,7 +16,7 @@ string Elements::getName() const
 	return this->name;
 }
 
-int Elements::attackOn(const Elements& target) const
+int Elements::attackOn(const EnumElement& target) const
 {
 	if (containsInVector(beats, target)) {
 		return 1;

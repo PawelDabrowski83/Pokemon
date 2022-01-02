@@ -1,22 +1,24 @@
 #pragma once
 #include <string>
 #include <vector>
+#include "EnumElement.h"
 
 using namespace std;
 
 class Elements
 {
 protected:
-	vector<Elements> beats;
-	vector<Elements> beaten;
+	vector<EnumElement> beats;
+	vector<EnumElement> beaten;
 public:
 	string name;
 	
-	Elements(const string&);
-	Elements* initialize(const vector<Elements>&, const vector<Elements>&);
+	Elements(const EnumElement&);
+	Elements* initialize(const vector<EnumElement>&, const vector<EnumElement>&);
 	
 	string getName() const;
-	int attackOn(const Elements&) const;
+	int attackOn(const EnumElement&) const;
+	EnumElement* getElement() const;
 
 	bool operator ==(const Elements&) const;
 };

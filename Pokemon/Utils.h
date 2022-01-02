@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "Elements.h"
+#include "EnumElement.h"
 
 using namespace std;
 
@@ -17,4 +17,4 @@ bool containsInVector(const vector<T>& arr, const T& key)
 	return false;
 };
 */
-bool containsInVector(const vector<Elements>&, const Elements&);
+bool containsInVector(const vector<EnumElement>&, const EnumElement&);

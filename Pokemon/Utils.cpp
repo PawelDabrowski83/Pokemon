@@ -1,7 +1,7 @@
 #include "Utils.h"
-#include "Elements.h"
+#include "EnumElement.h"
 
-bool containsInVector(const vector<Elements>& arr, const Elements& key)
+bool containsInVector(const vector<EnumElement>& arr, const EnumElement& key)
 {
 	for (size_t i = 0; i < arr.size(); i++) {
 		if (key == arr[i]) {
