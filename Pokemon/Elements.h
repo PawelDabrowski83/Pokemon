@@ -10,8 +10,11 @@ protected:
 	vector<Elements> beats;
 	vector<Elements> beaten;
 public:
-	Elements(string, vector<Elements>, vector<Elements>);
 	string name;
+	
+	Elements(string);
+	void initialize(vector<Elements>, vector<Elements>);
+	
 	string getName() const;
 	int attackOn(Elements) const;
 };
