@@ -7,10 +7,10 @@ using namespace std;
 class Elements
 {
 protected:
-	vector<string> beats;
-	vector<string> beaten;
+	vector<Elements> beats;
+	vector<Elements> beaten;
 public:
-	Elements(string, vector<string>, vector<string>);
+	Elements(string, vector<Elements>, vector<Elements>);
 	string name;
 	string getName() const;
 	int attackOn(Elements) const;
