@@ -2,6 +2,7 @@
 #include <string>
 #include "EnumElement.h"
 #include "Elements.h"
+#include "StatBlock.h"
 
 using namespace std;
 
@@ -12,6 +13,17 @@ protected:
 	int id;
 	string name;
 	Elements elementalType;
+	StatBlock strength;
+	StatBlock dexterity;
+	int maxHealth;
+	int currentHealth;
+	int maxPowerUse;
+	int currentPowerUse;
+	int specialPowerBonus;
+	int specialPowerMagnitude;
+	int currentXp;
+	int currentLevel;
+
 public:
 	Creature();
 	Creature(EnumElement);
