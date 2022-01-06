@@ -18,7 +18,7 @@ int main()
     string message = "";
     while (message != QUIT_GAME) {
         cout << HR << endl;
-        cout << BEGIN_ROUND_NO << gameRound << endl;
+        cout << BEGIN_ROUND_NO << gameRound++ << endl;
         cout << MENU_INPUT << endl;
         cout << ELEM_STEEL->attackOn(WATER) << endl;
         
