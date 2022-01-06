@@ -9,4 +9,7 @@ const string GOODBYE = "Thank you for playing.";
 const string BEGIN_ROUND_NO = "Beginning round number ";
 const string HR = "=====================================================================";
 const string WELCOME = "Welcome to generic turn game with non-trademarked creatures.";
+const string WELCOME2 = "You are participant of grant tournament.";
+const string WELCOME3 = "First take a look at available creatures and select 6 of them as your team.";
 const string MENU_OPTIONS = "Please select yout options by entering proper key.";
+const string MENU_CREATURES = "You are participant of ";

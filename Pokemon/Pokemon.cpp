@@ -15,6 +15,9 @@ int main()
     */
     int gameRound = 1;
     cout << WELCOME << endl;
+    cout << WELCOME2 << endl;
+    cout << WELCOME3 << endl;
+    cout << MENU_OPTIONS << endl;
 
     string message = "";
     while (message != QUIT_GAME) {
