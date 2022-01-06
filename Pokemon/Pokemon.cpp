@@ -14,16 +14,25 @@ int main()
         GAMELOOP
     */
     int gameRound = 1;
+    bool creaturesSelected = false;
     cout << WELCOME << endl;
     cout << WELCOME2 << endl;
     cout << WELCOME3 << endl;
-    cout << MENU_OPTIONS << endl;
+    cout << GENERATING_CREATURES << endl;
+    cout << HR << endl;
+    
 
     string message = "";
     while (message != QUIT_GAME) {
-        cout << HR << endl;
-        cout << BEGIN_ROUND_NO << gameRound++ << endl;
-        cout << MENU_INPUT << endl;
+        if (!creaturesSelected) {
+            cout << LIST_CREATURES << endl;
+        }
+        else {
+            cout << HR << endl;
+            cout << BEGIN_ROUND_NO << gameRound++ << endl;
+            cout << MENU_INPUT << endl;
+
+        }
         
         cin >> message;
 
