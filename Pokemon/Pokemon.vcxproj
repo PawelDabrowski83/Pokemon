@@ -151,6 +151,7 @@
     <ClInclude Include="Creature.h" />
     <ClInclude Include="Elements.h" />
     <ClInclude Include="EnumElement.h" />
+    <ClInclude Include="Init.h" />
     <ClInclude Include="Messages.h" />
     <ClInclude Include="SpecialAttack.h" />
     <ClInclude Include="StatBlock.h" />
