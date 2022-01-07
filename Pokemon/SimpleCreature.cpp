@@ -178,3 +178,14 @@ void SimpleCreature::takeHarm(int hit) {
 	setCurHp(getCurHp() - hit);
 }
 
+void SimpleCreature::resetCurStr() {
+	curStr = strength;
+}
+
+void SimpleCreature::resetCurDex() {
+	curDex = dexterity;
+}
+
+void SimpleCreature::resetCurHp() {
+	curHp = hp;
+}

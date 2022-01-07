@@ -52,4 +52,7 @@ public:
 	bool attack(SimpleCreature& target) const;
 	void takeHarm(int hit);
 	int calculateHp() const;
+	void resetCurStr();
+	void resetCurDex();
+	void resetCurHp();
 };
