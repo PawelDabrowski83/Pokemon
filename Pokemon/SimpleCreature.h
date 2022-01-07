@@ -7,7 +7,6 @@ using namespace std;
 class SimpleCreature
 {
 protected:
-	static int count;
 	int id;
 	string name;
 	EnumElement type;
@@ -21,6 +20,9 @@ protected:
 	int curHp;
 	int curLevel;
 public:
+	static int count;
+	const static int MAX_ATTRIBUTE = 20;
+	const static int MIN_ATTRIBUTE = 1;
 	SimpleCreature();
 	int getId() const;
 	string getName() const;
@@ -48,4 +50,5 @@ public:
 	bool isActive() const;
 	bool attack(SimpleCreature& target) const;
 	void takeHarm(int hit);
+	int calculateHp() const;
 };
