@@ -35,6 +35,7 @@ public:
 	int getHp() const;
 	void setHp(int value);
 	int getXp() const;
+	void setXp(int value);
 	int getLevel() const;
 	void setLevel(int level);
 	int getCurStr() const;

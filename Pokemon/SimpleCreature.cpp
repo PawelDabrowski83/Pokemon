@@ -58,28 +58,123 @@ void SimpleCreature::setStrength(int value)
 
 int SimpleCreature::calculateHp() const
 {
-	return strength * 2 + dexterity;
+	return strength * 2 + dexterity + 2 * curLevel;
 }
 
-/*
-	int getDexterity() const;
-	void setDexterity(int value);
-	int getHp() const;
-	void setHp(int value);
-	int getXp() const;
-	int getLevel() const;
-	void setLevel(int level);
-	int getCurStr() const;
-	void setCurStr(int value);
-	int getCurDex() const;
-	void setCurDex(int value);
-	int getCurHp() const;
-	void setCurHp(int value);
-	int getCurLevel() const;
-	void setCurLevel(int value);
-	void print() const;
-	void evolve();
-	bool isActive() const;
-	bool attack(SimpleCreature& target) const;
-	void takeHarm(int hit);
-*/
+int SimpleCreature::getDexterity() const
+{
+	return dexterity;
+}
+
+void SimpleCreature::setDexterity(int value)
+{
+	this->dexterity = value > MAX_ATTRIBUTE ? MAX_ATTRIBUTE :
+		value < MIN_ATTRIBUTE ? MIN_ATTRIBUTE : value;
+}
+
+int SimpleCreature::getHp() const
+{
+	return hp;
+}
+
+void SimpleCreature::setHp(int value)
+{
+	if (value > 0) {
+		this->hp = value;
+	}
+	else {
+		this->hp = 0;
+	}
+}
+
+int SimpleCreature::getXp() const
+{
+	return xp;
+}
+
+void SimpleCreature::setXp(int value)
+{
+	this->xp = value;
+}
+
+int SimpleCreature::getLevel() const
+{
+	return level;
+}
+
+void SimpleCreature::setLevel(int value)
+{
+	if (value > 0) {
+		this->level = value;
+	}
+	else {
+		this->level = 0;
+	}
+}
+
+int SimpleCreature::getCurStr() const
+{
+	return curStr;
+}
+
+void SimpleCreature::setCurStr(int value)
+{
+	this->strength = value > MAX_ATTRIBUTE ? MAX_ATTRIBUTE :
+		value < MIN_ATTRIBUTE ? MIN_ATTRIBUTE : value;
+}
+
+int SimpleCreature::getCurDex() const
+{
+	return curDex;
+}
+
+void SimpleCreature::setCurDex(int value)
+{
+	this->dexterity = value > MAX_ATTRIBUTE ? MAX_ATTRIBUTE :
+		value < MIN_ATTRIBUTE ? MIN_ATTRIBUTE : value;
+}
+
+int SimpleCreature::getCurHp() const
+{
+	return curHp;
+}
+
+void SimpleCreature::setCurHp(int value)
+{
+	this->curHp = value < 0 ? 0 : value;
+}
+
+int SimpleCreature::getCurLevel() const
+{
+	return curLevel;
+}
+
+void SimpleCreature::setCurLevel(int value)
+{
+	this->curLevel = value;
+}
+
+void SimpleCreature::print() const
+{
+
+}
+
+void SimpleCreature::evolve()
+{
+
+}
+
+bool SimpleCreature::isActive() const
+{
+	return curHp > 0;
+}
+
+bool SimpleCreature::attack(SimpleCreature& target) const
+{
+	return false;
+}
+
+void SimpleCreature::takeHarm(int hit) {
+	setCurHp(getCurHp() - hit);
+}
+
