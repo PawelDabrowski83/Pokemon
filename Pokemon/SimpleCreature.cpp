@@ -1,28 +1,10 @@
-#pragma once
 #include <string>
+#include "SimpleCreature.h"
 #include "EnumElement.h"
 
 using namespace std;
 
-class SimpleCreature
-{
-protected:
-	static int count;
-	int id;
-	string name;
-	EnumElement type;
-	int strength;
-	int dexterity;
-	int hp;
-	int xp;
-	int level;
-	int curStr;
-	int curDex;
-	int curHp;
-	int curLevel;
-public:
-	SimpleCreature();
-	int getId() const;
+/*
 	string getName() const;
 	void setName(string name);
 	EnumElement getType() const;
@@ -48,4 +30,18 @@ public:
 	bool isActive() const;
 	bool attack(SimpleCreature& target) const;
 	void takeHarm(int hit);
-};
+*/
+
+SimpleCreature::SimpleCreature() 
+{
+	id = count++;
+	name = "Creature " + id;
+	type = WATER;
+	this->strength = 
+
+}
+
+int SimpleCreature::getId() const
+{
+	return id;
+}

@@ -143,6 +143,7 @@
     <ClCompile Include="Elements.cpp" />
     <ClCompile Include="EnumElement.cpp" />
     <ClCompile Include="Pokemon.cpp" />
+    <ClCompile Include="SimpleCreature.cpp" />
     <ClCompile Include="SpecialAttack.cpp" />
     <ClCompile Include="StatBlock.cpp" />
     <ClCompile Include="Utils.cpp" />
