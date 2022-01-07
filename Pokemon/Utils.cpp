@@ -1,5 +1,7 @@
 #include "Utils.h"
 #include "EnumElement.h"
+#include <random>
+
 
 bool containsInVector(const vector<EnumElement>& arr, const EnumElement& key)
 {
@@ -10,3 +12,13 @@ bool containsInVector(const vector<EnumElement>& arr, const EnumElement& key)
 	}
 	return false;
 };
+
+// from https://stackoverflow.com/a/20136256/13521548
+int getRandom(int rangeFrom, int rangeTo)
+{
+	std::random_device                  rand_dev;
+	std::mt19937                        generator(rand_dev());
+	std::uniform_int_distribution<int>  distr(rangeFrom, rangeTo);
+
+	return distr(generator);
+}

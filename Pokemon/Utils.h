@@ -18,3 +18,7 @@ bool containsInVector(const vector<T>& arr, const T& key)
 };
 */
 bool containsInVector(const vector<EnumElement>&, const EnumElement&);
+
+int getRandom(int, int);
+
+EnumElement getRandom(const vector<EnumElement>&);
