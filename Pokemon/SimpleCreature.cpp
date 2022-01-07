@@ -1,6 +1,8 @@
+#include <iostream>
 #include <string>
 #include "SimpleCreature.h"
 #include "EnumElement.h"
+#include "Messages.h"
 
 using namespace std;
 
@@ -156,7 +158,16 @@ void SimpleCreature::setCurLevel(int value)
 
 void SimpleCreature::print() const
 {
-
+	cout << HR << endl;
+	cout << "||| NAME: " << name << endl;
+	cout << "||| ID: " << id << endl;
+	cout << "||| TYPE: " << type << endl;
+	cout << "||| STR: " << curStr << " / " << strength << endl;
+	cout << "||| DEX: " << curDex << " / " << dexterity << endl;
+	cout << "||| HP: " << curHp << " / " << hp << endl;
+	cout << "||| XP: " << xp << endl;
+	cout << "||| LEVEL" << curLevel << " / " << level << endl;
+	cout << HR << endl;
 }
 
 void SimpleCreature::evolve()
